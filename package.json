@@ -1,0 +1,14 @@
+{
+  "name": "v-sass",
+  "version": "1.0.0",
+  "description": "Sell",
+  "main": "lightbox-plus-jquery.min.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Admir B",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

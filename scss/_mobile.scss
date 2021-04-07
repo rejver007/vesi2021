@@ -1,0 +1,234 @@
+
+//Wide screen 1171px
+@include mediaXl{
+.navbar .menu a{
+    font-size: 0.8rem;
+    padding: 30px;
+    
+}
+}
+
+// Desktops & Laptops 769px
+@include mediaLg{
+
+.gallery-enter img{
+    width: 950px;
+    margin-left: 20px;
+    
+}
+
+}
+
+// Tablets & Small Laptops 768px
+@include mediaMd {
+
+
+.gallery-enter img{
+    width: 300px;
+}
+
+.smalllogo{
+    display: none;
+}
+.menu ul{
+    display: flex;
+    
+}
+.navbar .menu a{
+    font-size: 12px;
+    margin-left: 0;
+    letter-spacing: 0;
+    padding: 0 10px;
+}
+.showcase .content .logo{
+    width: 150px;
+    height: 90px;
+}
+
+#suomi{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    left: 20px;
+    top: 22.5px;
+    opacity: 1;
+}
+#swedish{
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    left: 80px;
+    top: 22.5px;
+    opacity: 1;
+}
+.showcase{
+    &:after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+    }
+}
+#sve{
+    display: none;
+}
+#fin{
+    display: none;
+}
+.grid-3{
+    grid-template-columns:  1fr;
+    .tdleft{
+        text-align: left;
+        
+        
+    }
+}
+.services table tr td{
+    text-align: center;
+    width: 10%;
+    border-bottom: solid 1px  rgba(51, 51, 51, 0.116);
+    margin: auto;
+} 
+.services .frame{
+    border-bottom: none;
+}
+
+}
+
+
+// Smartphones 600px
+@include mediaSm{
+
+
+
+.navbar{
+    overflow-x: hidden;
+    .menu{
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1;
+        overflow: hidden;
+        max-height: 0;
+        a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        }
+    }
+    .btn{
+        display: block;
+        cursor: pointer;
+    }
+    .show{
+        max-height: 500px;
+        @include easeInOut;
+    }
+}
+
+
+.gallery{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+} 
+ .showcase::after{
+    height: 65vh;
+}
+.content{
+    top: 0;
+    margin-top: 1px;
+    .logo{
+    height: 70px;
+    width: 130px;
+    }
+    .title{
+    font-size: 18px !important;
+    background: rgba(51, 51, 51, 0.329);
+    }
+    .text{
+        font-size: 10px !important;
+    }
+    }
+.grid-2{
+    grid-template-columns: 1fr;
+    .center{
+        display: none;
+    }
+    }
+.grid-3{
+    
+    grid-template-columns:  1fr;
+    grid-gap: 40px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 0;
+    .grids{
+        width: 80%;
+        margin-top: 90px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+} 
+.services table tr td{
+    text-align: left;
+    width: 10%;
+    
+} 
+.galleryimage{
+    width: 300px;
+    margin-top: -35px;
+}  
+.history{
+    font-size: 1rem;
+} 
+.container .text_p{
+    display: none;
+}
+.details h3{
+    font-size: 1rem;
+    margin-top: -30px;
+}
+.paragraph{
+    display: block;
+    padding: 10px 10px 0 10px;
+}
+
+
+}
+
+
+
+// Small Smartphones 450px
+@include mediaXsm{
+.navbar .nav{
+    font-size: 1rem;
+}
+.showcase .content img{
+    width: 10px;
+    height: 10px;
+}
+
+.menu ul{
+    display: inherit;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+}
+
+//Very small 
+@include mediaXXsm{
+    .showcase .content .text{
+        font-size: 5rem;
+    }
+}
+//Landscape
+@include landScape{
+    .content .title,
+    .content .text{
+        display: none;
+    }
+    .content{
+        top: 0;
+    }
+}

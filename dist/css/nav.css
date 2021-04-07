@@ -1,0 +1,93 @@
+
+.navbar{
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: rgba(51, 51, 51, 0.849);
+  width: 100%;
+  z-index: 99;
+}
+.smalllogo{
+  background: url(../../logo.png) no-repeat 50% 50%;
+  background-size: contain;
+  width: 200px;
+  height: 50px;
+  float: left;
+  margin-left:20px;
+}
+
+.menu{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  
+ 
+}
+.menu a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 80px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  
+}
+
+.menu a:hover{
+  color:#D5BD67;
+}
+
+
+.btn{
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+.btn:hover > span{
+  background: #D5BD67;
+}
+.btn span{
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #fff;
+}
+
+@media only screen and (max-width : 600px) {
+  .navbar{
+    overflow: visible;
+    background: #333;
+    
+  }
+  .menu{
+    width: 100%;
+    right: 0;
+    top: 80px;
+    
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    background: #333;
+    color: #fff;
+    
+  }
+  .btn{
+    display: block;
+    cursor: pointer;
+  }
+  .show{
+    max-height: 500px;
+  }
+}
+
